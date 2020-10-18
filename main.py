@@ -17,7 +17,7 @@ def speak(str):
 if __name__ == "__main__":
     i = 0
     speak("Today's headlines are....")
-    url = 'http://newsapi.org/v2/top-headlines?country=in&apiKey=356e5f3c0a314f218efbdeae951547d8'
+    url = 'http://newsapi.org/v2/top-headlines?country=in&apiKey=enter-your-api'
     news = requests.get(url).text
     # So news is a string so we can't do slicing, to do so we will convert it into python obj using JSON
     news_json = json.loads(news)
